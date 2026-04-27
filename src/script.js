@@ -1,29 +1,7 @@
-class Todo { 
+const form = document.querySelector('[data-js-todo-new-task-form]'); 
+const input = document.querySelector ('[data-js-todo-new-task-input']);  
+const totalTask = document.querySelector('[data-js-todo-total-tasks]'); 
+const delAllBth = document.querySelector('[data-js-todo-delete-all-button]'); 
+const list = document.querySelector('[data-js-todo-list]'); 
+const message = document.querySelector('[data-js-todo-empty-message]'); 
 
-    selectors = {
-    root: '[data-js-todo]',
-    newTaskForm: '[data-js-todo-new-task-form]',  
-    newTaskImput: '[data-js-todo-new-task-input]',  
-    searchTaskForm: '[data-js-todo-search-task-form]', 
-    searchTaskImput: '[data-js-todo-search-task-imput]',  
-    totalTask: '[data-js-todo-delete-all-button]',  
-    deleteAllButton: '[data-js-todo-delete-all-button]', 
-    list: '[data-js-todo-list]',  
-    item: '[data-js-todo-item]',  
-    itemLabel: '[data-js-todo-item-label]',  
-    itemDeleteButton: '[data-js-todo-item-delete-button]',  
-    emptyMessage: '[data-js-todo-empty-message]',  
-    }
-}
-
-stateClasses = { 
-
-    isVisible: 'is-visible',
-    isDisappearing: 'is-disappearing', 
-
-}
-
-localStorageKey = 'todo-items' 
-
-
-new Todo ()
